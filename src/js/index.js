@@ -23,26 +23,32 @@ const personagens = document.querySelectorAll(".personagem");
 
 
 //forEach para pegar eventos dos botões
-botoes.forEach((botao,indice) => {
+botoes.forEach((botao, indice) => {
   //arrow function para verificar evento de click
-  botao.addEventListener("click", ()=>{
+  botao.addEventListener("click", () => {
 
-    //pegando o botão seleciondo
-    const botaoSeleciondo = document.querySelector(".botao.selecionado");      
-
-    //removendo classe se houver
-    botaoSeleciondo.classList.remove("selecionado");
+ 
+    desselecionarBotao();
+    desselecionarPersonagem();
 
     //adicionando classe selecionado para o botão clicado
     botao.classList.add('selecionado');
-
-        const personagemSelecionado = document.querySelector(".personagem.selecionado")
-        personagemSelecionado.classList.remove("selecionado");
-        //adicionando personagens ao click do botão
-        personagens[indice].classList.add("selecionado");
-      });    
+    //adicionando personagens ao click do botão
+    personagens[indice].classList.add("selecionado");
+  });
 });
 
 
 
+
+function desselecionarPersonagem() {
+  const personagemSelecionado = document.querySelector(".personagem.selecionado");
+  personagemSelecionado.classList.remove("selecionado");
+}
+
+function desselecionarBotao() {
+  const botaoSeleciondo = document.querySelector(".botao.selecionado");
+  //removendo classe se houver
+  botaoSeleciondo.classList.remove("selecionado");
+}
 
