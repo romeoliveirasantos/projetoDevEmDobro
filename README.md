@@ -6,7 +6,7 @@ Projeto desenvolvido na semana DO ZERO AO PROGRAMADOR CONTRATADO
 <h2>Projeto inspirado no anime "One Piece"</h2>
 <br><br>
 <a href="https://romeoliveirasantos.github.io/projetoDevEmDobro/">Clique aqui e confira o projeto!</a>
-<br>
+<br><br><br>
 <div>
   <img src="./src/imagens/Criativo_projeto_versao_mobile_-_Story.png">
 <div>
